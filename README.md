@@ -24,8 +24,9 @@ Things you may want to cover:
 ## groupsテーブル
 
 |Column|Type|Options|
-|group_name|string|null: false|
-|chat_member|string|null: false|
+|------|----|-------|
+|name|string|null: false|
+
 
 
 ### Association
@@ -38,15 +39,15 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|body|text|
+|image|string|
 |user_id|integer|null: false,foreign_key: true|
 |group_id|integer|null: false,foreign_key: true|
 
 
 ### Association
-- belongs_to :users
-- belongs_to :groups
+- belongs_to :user
+- belongs_to :group
 
 
 
@@ -58,8 +59,8 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :groups
-- belongs_to :users
+- belongs_to :group
+- belongs_to :user
 
 
 
