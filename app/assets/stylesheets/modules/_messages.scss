@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+}
+
+$chat-color1:#ffffff;
+$chat-color2:#253141;
+$chat-color3:#2f3e51;
+$chat-color4:#333333;
+$chat-color5:#999999;
+$chat-color6:#38aef0;
+$chat-color7:#fafafa;
+$chat-color8:#d2d2d2;
+
+
+.wrapper{
+  display: flex;
+  .side-bar{
+    background-color: $chat-color2;
+    height: 100vh;
+    width: 300px;
+    float: left;
+    &__user-name{
+      background-color: $chat-color2;
+      height: 100px;
+      width: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &__user{
+        background-color: $chat-color2;
+        height: 20px;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        &__left{
+          background-color: $chat-color2;
+          height: 20px;
+          width: 60px;
+          color: $chat-color1;
+          font-weight: bold;
+          line-height: 20px;
+        }
+        &__right{
+          background-color: $chat-color2;
+          height: 20px;
+          width: 60px;
+          text-align: right;
+          line-height: 20px;
+          a{
+            color: $chat-color1;
+            text-decoration: none;
+            margin: 0 0 0 5px;
+          }
+        }
+      }
+    }
+    &__group-list{
+      background-color: $chat-color3;
+      height: calc(100vh - 100px);
+      width: 300px;
+      padding: 20px 20px 0 20px;
+      &__group{
+        background-color: $chat-color3;
+        height: 45px;
+        width: 260px;
+      .group-name{
+        color: $chat-color1;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      .group-message{
+        color: $chat-color1;
+        font-size: 11px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+
+    .main-chat{
+      background-color: $chat-color1;
+      height: 100vh;
+      width: calc(100vw - 300px);
+      &__group-info{
+        background-color: $chat-color1;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 40px;
+        &__left{
+          height: 50px;
+          width: 100px;
+          margin-top: 35px;
+        .list{
+          color: $chat-color4;
+          font-size: 20px;
+          margin-bottom: 15px;
+        }
+        .member{
+          color: $chat-color5;
+          font-size: 12px;
+        }
+        }
+        &__right{
+          height: 100px;
+          width: 100px;
+          a{
+            color:$chat-color6;
+            height: 40px;
+            width: 72px;
+            line-height: 40px;
+            text-decoration: none;
+            border: 1px solid;
+            display: block;
+            text-align: center;
+            margin-left: 28px;
+            font-size: 16px;
+          }
+          &__edit{
+            margin-top: 28px;
+          }
+        }
+      }
+
+      &__message-list{
+        background-color: $chat-color7;
+        height: calc(100vh - 190px);
+        padding: 35px 40px;
+        &__index{
+          margin-bottom: 46px;
+          &__upper{
+            display: flex;
+            margin-bottom: 12px;
+            .talker{
+            color: $chat-color4;
+            font-size: 16px;
+            }
+            .data{
+            font-size: 12px;
+            margin-left: 10px;
+            }
+          }
+        }
+      }
+      &__message-form{
+        background-color: $chat-color8;
+        height: 90px;
+        padding: 20px 40px;
+        &__make{
+          background-color: $chat-color8;
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          &__edit{
+            height: 50px;
+            width: calc(100% - 110px);
+            background-color: $chat-color1;
+            display: flex;
+            &__text{
+              height: 50px;
+              width: 857px;
+              background-color: $chat-color1;
+            }
+            &__image{
+              height: 50px;
+              width: 100px;
+              background-color: $chat-color1;
+              position: relative;
+              .fa-image{
+                color: $chat-color4;
+                position: absolute;
+                left: 53px;
+                margin-top: 10px;
+                font-size: 1.7em;
+              }
+              .my-img{
+                display: none;
+              }
+            }
+          }
+          &__send{
+            height: 50px;
+            width: 100px;
+            background-color: $chat-color6;
+            margin-left: 15px;
+            .sending{
+              color: $chat-color1;
+              margin-top: 15px;
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+}

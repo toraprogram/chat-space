@@ -1,0 +1,29 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__left
+      .list techcamp
+      .member Member:masa
+    .main-chat__group-info__right
+      .main-chat__group-info__right__edit
+        = link_to "Edit","#"
+  .main-chat__message-list
+    .main-chat__message-list__index
+      .main-chat__message-list__index__upper
+        .talker masa
+        .data 2020/02/20(Mon) 20:00:00
+      .message おはよう
+      .main-chat__message-list__index
+      .main-chat__message-list__index__upper
+        .talker masa
+        .data 2020/02/20(Mon) 20:00:00
+      .message おはよう
+  .main-chat__message-form
+    .main-chat__message-form__make
+      .main-chat__message-form__make__edit
+        .main-chat__message-form__make__edit__text
+        .main-chat__message-form__make__edit__image
+          %label{class: "input-box__image"}
+            = icon('far', 'image')
+            %input{type: "file" ,class:"my-img"}
+      .main-chat__message-form__make__send
+        .sending Send
