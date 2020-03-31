@@ -63,16 +63,16 @@ $chat-color8:#d2d2d2;
         background-color: $chat-color3;
         height: 45px;
         width: 260px;
-      .group-name{
-        color: $chat-color1;
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-      .group-message{
-        color: $chat-color1;
-        font-size: 11px;
         margin-bottom: 40px;
-      }
+        .group-name{
+          color: $chat-color1;
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        .group-message{
+          color: $chat-color1;
+          font-size: 11px;
+        }
     }
   }
 }
