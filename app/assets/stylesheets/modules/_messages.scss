@@ -90,7 +90,6 @@ $chat-color8:#d2d2d2;
         margin: 0 40px;
         &__left{
           height: 50px;
-          width: 100px;
           margin-top: 35px;
         .list{
           color: $chat-color4;
@@ -143,54 +142,58 @@ $chat-color8:#d2d2d2;
           }
         }
       }
+
       &__message-form{
         background-color: $chat-color8;
+        box-sizing: border-box;
         height: 90px;
         padding: 20px 40px;
         &__make{
           background-color: $chat-color8;
           height: 50px;
-          display: flex;
-          justify-content: space-between;
           &__edit{
             height: 50px;
             width: calc(100% - 110px);
             background-color: $chat-color1;
             display: flex;
+            position: relative;
             &__text{
               height: 50px;
-              width: 857px;
+              width: calc(100% - 110px);
               background-color: $chat-color1;
+              .form__message{
+                height: 50px;
+                width: 1305px;
+              }
             }
             &__image{
               height: 50px;
               width: 100px;
-              background-color: $chat-color1;
-              position: relative;
-              .fa-image{
+              position: absolute;
+              left: 1265px;
+              .icon{
                 color: $chat-color4;
-                position: absolute;
-                left: 53px;
                 margin-top: 10px;
                 font-size: 1.7em;
               }
-              .my-img{
+              .hidden{
                 display: none;
               }
             }
-          }
-          &__send{
-            height: 50px;
-            width: 100px;
-            background-color: $chat-color6;
-            margin-left: 15px;
-            .sending{
+            
+            .form__submit{
+              background-color: $chat-color6;
+              border: none;
               color: $chat-color1;
-              margin-top: 15px;
-              margin-left: 30px;
+              font-size: 16px;
+              height: 50px;
+              margin-left: 125px;
+              padding: 0 30px;
+              }
             }
           }
         }
       }
     }
-}
+
+
