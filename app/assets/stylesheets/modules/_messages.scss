@@ -126,21 +126,24 @@ $chat-color8:#d2d2d2;
         background-color: $chat-color7;
         height: calc(100vh - 190px);
         padding: 35px 40px;
-        &__index{
-          margin-bottom: 46px;
-          &__upper{
-            display: flex;
-            margin-bottom: 12px;
-            .talker{
-            color: $chat-color4;
-            font-size: 16px;
-            }
-            .data{
-            font-size: 12px;
-            margin-left: 10px;
+        overflow: scroll;
+        .messages{
+        }
+          &__index{
+            margin-bottom: 46px;
+            &__upper{
+              display: flex;
+              margin-bottom: 12px;
+              .talker{
+              color: $chat-color4;
+              font-size: 16px;
+              }
+              .data{
+              font-size: 12px;
+              margin-left: 10px;
+              }
             }
           }
-        }
       }
 
       &__message-form{
@@ -152,7 +155,6 @@ $chat-color8:#d2d2d2;
           background-color: $chat-color8;
           height: 50px;
           &__edit{
-            height: 50px;
             width: calc(100% - 110px);
             background-color: $chat-color1;
             display: flex;
