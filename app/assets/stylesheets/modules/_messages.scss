@@ -59,6 +59,9 @@ $chat-color8:#d2d2d2;
       height: calc(100vh - 100px);
       width: 300px;
       padding: 20px 20px 0 20px;
+      a{
+        text-decoration: none;
+      }
       &__group{
         background-color: $chat-color3;
         height: 45px;
@@ -153,24 +156,23 @@ $chat-color8:#d2d2d2;
           background-color: $chat-color8;
           height: 50px;
           &__edit{
-            width: calc(100% - 110px);
             background-color: $chat-color1;
             display: flex;
             position: relative;
             &__text{
               height: 50px;
-              width: calc(100% - 110px);
+              width: calc(100% - 10px);
               background-color: $chat-color1;
               .form__message{
                 height: 50px;
-                width: 1305px;
+                width: 100%;
               }
             }
             &__image{
               height: 50px;
               width: 100px;
               position: absolute;
-              left: 1265px;
+              right: 40px;
               .icon{
                 color: $chat-color4;
                 margin-top: 10px;
@@ -187,7 +189,6 @@ $chat-color8:#d2d2d2;
               color: $chat-color1;
               font-size: 16px;
               height: 50px;
-              margin-left: 125px;
               padding: 0 30px;
               }
             }
